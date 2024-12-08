@@ -1,0 +1,23 @@
+Factory Design Pattern
+The Factory Design Pattern is one of the creational design patterns. It defines an interface for creating objects, but allows subclasses or a factory class to decide which class to instantiate. The main goal of the factory pattern is to abstract the object creation process and allow the code to be more flexible and easier to extend. It allows the system to be decoupled from the specific classes it needs to instantiate.
+
+Problem Addressed by the Factory Pattern
+In many applications, the creation of objects is not straightforward. There may be:
+
+1. Complex initialization: Some objects require complex initialization or may depend on the state of other parts of the system.
+2. Decoupling of object creation: The application may not need to know the exact class type of the object it creates.
+3. Future extensibility: You may want to add new types of objects to the system without modifying existing code.
+
+Structure of Factory Method Pattern
+1. Product: Defines the interface for objects the factory method creates.
+2. ConcreteProduct: Implements the Product interface.
+3. Creator: Declares the factory method, which returns an object of type Product.
+4. ConcreteCreator: Implements the factory method to return an instance of ConcreteProduct.
+
+When to Use the Factory Design Pattern
+
+1. When the creation process of an object is complex or involves several steps.
+2. When the exact type of object needs to be decided at runtime.
+3. When you want to decouple the client code from the concrete class of the objects it creates.
+4. When the system needs to be extensible and new object types might be added in the future without changing the existing code.
+

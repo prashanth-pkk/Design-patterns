@@ -1,0 +1,28 @@
+The Singleton Design Pattern
+ It is a type of creational design pattern that ensures a class has only one instance and provides a global point of access to that instance. This pattern is particularly useful when you need to control access to shared resources, such as a database connection or configuration settings, and ensure that only one instance of a class exists throughout the application.
+
+ Characteristics of Singleton Pattern:
+ 1. Single Instance: The class has only one instance throughout the lifetime of the application.
+ 2. Global Access: The instance is globally accessible.
+ 3. Lazy Initialization: The instance is created only when it is needed (optional, but common in most implementations).
+ 4. Thread Safety: If the application is multi-threaded, care must be taken to ensure that the instance is created only once.
+
+Two approaches are here
+1. Eager Initialization:
+In this approach, the instance of the Singleton is created at the time of class loading.
+
+2. Lazy Initialization:
+In this approach, the instance is created only when it is requested for the first time.
+
+When to Use Singleton Pattern:
+Global access point for shared resources, like a configuration manager or logging system.
+Preventing object creation in situations where creating multiple instances would be inefficient or incorrect (like connecting to a database).
+
+Avoid Overuse of Singleton Pattern:
+1. Testing: It can make unit testing more difficult because the Singleton class can act as a global state that may cause dependencies to be tightly coupled.
+2. Hidden Dependencies: It may lead to hidden dependencies between classes, making the system harder to maintain.
+
+Explanation of the Key Implementations:
+Eager Initialization: The instance is created when the class is loaded, making it thread-safe. However, it may result in unnecessary object creation if the instance is never used.
+Lazy Initialization: This creates the instance only when needed, but it is not thread-safe unless additional measures are taken (e.g., using synchronized).
+Thread-Safe Singleton (Double-Checked Locking): This is an optimization over the lazy initialization. It minimizes the performance overhead of synchronization by only synchronizing the block of code where the instance is created.
