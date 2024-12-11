@@ -1,0 +1,24 @@
+DI
+Dependency Injection is a technique where an object (called the client) is given its dependencies (services or other objects) rather than creating them itself.
+Instead of a class directly creating an instance of a required service, you inject the service instance from outside (for example, via constructor, setter methods, or field injection).
+
+Benefits of Dependency Injection:
+Loose Coupling:     Classes don't need to know how their dependencies are created. This allows easier testing and modification of classes without breaking other parts of the application.
+Easier Unit Testing:    Since you can inject mock dependencies during testing, DI allows better unit testing.
+Separation of Concerns: DI helps separate the concerns of creating and managing objects from the logic of the application.
+Flexibility and Scalability: DI helps in swapping out one implementation of a dependency with another, which makes your code more flexible to change.
+
+Types of Dependency Injection:
+There are three common types of Dependency Injection in Java:
+
+1. Constructor Injection:
+The dependencies are provided through the class constructor.
+The dependencies are injected when the object is created, and they are usually required.
+2. Setter Injection:
+Dependencies are provided through setter methods after the object is created.
+It is often used when the dependency is optional or can be changed after the object is instantiated.
+3. Field Injection:
+Dependencies are injected directly into the fields (properties) of the class.
+Typically used in frameworks like Spring with annotations.
+
+

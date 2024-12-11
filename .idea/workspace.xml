@@ -4,25 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec820788-d3e7-4735-876d-9b26639a31b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pk/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pk/factorydesignpattern/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pk/factorydesignpattern/AnimalFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pk/factorydesignpattern/AnimalTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pk/factorydesignpattern/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pk/factorydesignpattern/CatFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pk/factorydesignpattern/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pk/factorydesignpattern/DogFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pk/factorydesignpattern/FactoryDesignPatternTheory" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pk/singletondesignpattern/SingletonDesignPatternTheory" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pk/singletondesignpattern/SingletonEagerInitialization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pk/singletondesignpattern/SingletonLazyInitialization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pk/singletondesignpattern/ThreadSafeSingleton.java" afterDir="false" />
+    <list default="true" id="ec820788-d3e7-4735-876d-9b26639a31b4" name="Changes" comment="Design patterns in java">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/pk/dependencyinjection/CarCI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/pk/dependencyinjection/CarSI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/pk/dependencyinjection/DI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/pk/dependencyinjection/DIContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/pk/dependencyinjection/Engine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/pk/dependencyinjection/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pk/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pk/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,20 +39,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.codeium.enabled": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Application.Test">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.pk.Main" />
       <module name="DesignPatterns" />
@@ -76,8 +67,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.pk.dependencyinjection.Test" />
+      <module name="DesignPatterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.pk.dependencyinjection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -98,6 +103,19 @@
       <option name="presentableId" value="Default" />
       <updated>1733543914633</updated>
     </task>
+    <task id="LOCAL-00001" summary="Design patterns in java">
+      <option name="closed" value="true" />
+      <created>1733656323877</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733656323877</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Design patterns in java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Design patterns in java" />
   </component>
 </project>
